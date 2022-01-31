@@ -181,6 +181,9 @@ By default Next.js won't load your statically imported images (images that you i
   module.exports = withExpo(
     withImages({
       projectRoot: __dirname,
+      images: {
+        disableStaticImages: true,
+      },
     })
   );
   ```
